@@ -5,63 +5,59 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Olivia Giandrea's Portfolio">
-	<meta name="keywords" content="Olivia Giandrea, Wellesley College">
+	<meta name="keywords" content="Olivia Giandrea, Software Engineer at SurveyMonkey">
 
 	<link rel="stylesheet" href="assets/styles.css">
 	<link rel="icon" href="assets/img/logo.svg">
 	<link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/4266217451.js" crossorigin="anonymous"></script>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+		rel="stylesheet">
 	<title>Olivia Giandrea</title>
 </head>
 
 <body>
 	<!--Navigation Bar-->
-	<nav class="primary-header flex">
-		<a href="#about">
-			<img src="assets/img/logo.svg" alt="Navbar Star Logo" class="logo" />
+	<nav class="primary-header">
+		<a href="#about" class="logoWrapper">
+			<img src="assets/img/logo.svg" alt="Navbar Star Logo" class="logo" /> Olivia Giandrea
 		</a>
 		<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
 			<span class="sr-only">Menu</span>
 		</button>
-		<ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+		<ul id="primary-navigation" data-visible="false" class="primary-navigation">
 			<li class="nav-link">
 				<a href="#about">
-					<span aria-hidden="true">01</span>ABOUT
-				</a>
-			</li>
-			<li class="nav-link">
-				<a href="#experience">
-					<span aria-hidden="true">02</span>EXPERIENCE
+					<span aria-hidden="true">01</span>About
 				</a>
 			</li>
 			<li class="nav-link">
 				<a href="#projects">
-					<span aria-hidden="true">03</span>PROJECTS
+					<span aria-hidden="true">02</span>Projects
 				</a>
 			</li>
 			<li class="nav-link">
 				<a href="#contact">
-					<span aria-hidden="true">04</span>CONTACT
+					<span aria-hidden="true">03</span>Contact
 				</a>
+			</li>
+			<li class="resume">
+				<a href="/assets/resume.pdf" class="button">Résumé</a>
 			</li>
 		</ul>
 	</nav>
 
-	<div class="page-content">
+	<div class="content">
 		<!--Home Page-->
 		<section id="home-section">
 			<div class="container row twinkles" id="home-wrap">
 				<div class="container row">
 					<div class="container column" id="landing-text">
-						<h1 class="title">OLIVIA GIANDREA</h1>
-						<img src="assets/img/portrait.svg" alt="Self-Portrait Drawing" id="portrait"><br />
+						<h1 class="title">Olivia Giandrea</h1>
 						<div class="description">
-							<p>Software Engineer at SurveyMonkey</p><br />
+							<p>Curious by nature, precise by practice.</p><br />
 						</div>
-						<a href="#about" class="button">LEARN MORE</a>
 					</div>
 				</div>
 			</div>
@@ -72,13 +68,18 @@
 			<div class="about-container">
 				<div class="about-item-left about-text">
 					<div id="about-text">
-						<h1 class="subtitle">01 . ABOUT ME</h1>
+						<h1 class="subtitle">01 . About Me</h1>
 						<p id="about-p">
 							Hello!
 							<br /><br />
-							I'm a software engineer at <span class="green">SurveyMonkey</span>. 
+							I'm Olivia, a software engineer at <span class="gold">SurveyMonkey</span>.
 							<br /><br />
-							I specialize in <span class="purple">web development</span>, and in my free time, I enjoy baking, sewing, stargazing, and hiking.
+							I specialize in building high-performance <span class="gold">React applications</span>,
+							scalable <span class="gold">design systems</span>, and
+							<span class="gold">engineering tooling</span> that accelerates
+							development, improves accessibility, and enables consistent product delivery.
+							<br /><br />
+							In my free time, I enjoy hiking, baking, sewing, and stargazing.
 							<br /><br />
 							Thanks for stopping by!
 						</p>
@@ -90,300 +91,136 @@
 			</div>
 		</section>
 
-		<!--Education Section-->
-		<section id="experience">
-			<div class="edu-container">
-				<h1 class="subtitle" id="edu">02 . EDUCATION/EXPERIENCE</h1>
-				<div class="education-container">
-					<h2>EDUCATION</h2>
-					<div class="edu-wrap">
-						<ul id="edu-nav">
-							<li class="edu_btn edu1 selected" tabindex="0" onclick="filterEdu('edu1')">WELLESLEY COLLEGE</li>
-							<li class="edu_btn edu2" tabindex="0" onclick="filterEdu('edu2')">MIDDLEBURY COLLEGE</li>
+		<!--Skills Section-->
+		<section id="skills-section">
+			<div class="skills-container">
+				<h1 class="subtitle" id="skills">02 . Skills</h1>
+				<div class="skills">
+					<div class="skills-group">
+						<h3>Languages</h3>
+						<ul>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>Python</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>SASS</li>
 						</ul>
-						<div class="edu-detail edu1 show">
-							<p>B.A. Computer Science
-								<span class="purple">&#8674; Wellesley College</span>,
-								<span class="red">MIT</span>,
-								<span class="green">Dartmouth</span>
-							</p>
-							<p class="timeline">Aug 2020 - May 2023</p>
-							<ul>
-								<li>GPA: 3.89</li>
-								<li>Courses from Wellesley College, MIT, and Dartmouth College</li>
-								<ul class="nested-list">
-									<li>CS111 - Programming and Problem Solving</li>
-									<li>CS230 - Data Structures</li>
-									<li>CS231 - Fundamental Algorithms</li>
-									<li>CS234 - Data Analytics and Visualization</li>
-									<li>CS235 - Theory of Computation</li>
-									<li>CS240 - Foundations of Computer Systems</li>
-									<li>CS304 - Databases with Web Interfaces</li>
-									<li>CS350 - Independent Study: Web Development</li>
-									<li>CS350H - Independent Study: Web Development</li>
-									<li>MATH115 - Calculus I</li>
-									<li>MATH116 - Calculus II</li>
-									<li>MATH225 - Combinatorics and Graph Theory</li>
-									<li><span class="red">6.1040 - Software Studio (MIT)</span></li>
-									<li><span class="green">CS63 - AR/VR Development (Dartmouth)</span></li>
-									<li><span class="green">QSS19 - Advanced Data Visualization (Dartmouth)</span></li>
-								</ul>
-							</ul>
-						</div>
-						<div class="edu-detail edu2">
-							<p>Summer School of Japanese
-								<span class="purple">&#8674; Middlebury College</span>
-							</p>
-							<p class="timeline">Summer 2019</p>
-							<ul>
-								<li>GPA: 4.0</li>
-							</ul>
-						</div>
 					</div>
-					<img src="assets/img/starbanner.svg" alt="Star Banner" class="star-banner" />
-					<h2>EXPERIENCE</h2>
-					<div class="exp-wrap">
-						<ul id="exp-nav">
-							<li class="exp_btn exp1 selected" tabindex="0" onclick="filterExp('exp1')">SURVEYMONKEY</li>
-							<li class="exp_btn exp2" tabindex="0" onclick="filterExp('exp2')">FREELANCE</li>
-							<li class="exp_btn exp3" tabindex="0" onclick="filterExp('exp3')">WELLESLEY COLLEGE</li>
-							<li class="exp_btn exp4" tabindex="0" onclick="filterExp('exp4')">ENERCON TECHNOLOGIES</li>
+					<div class="skills-group">
+						<h3>Libraries/ <br />Frameworks</h3>
+						<ul>
+							<li>React</li>
+							<li>Next.js</li>
+							<li>Node.js</li>
+							<li>Express</li>
+							<li>Bootstrap</li>
+							<li>Tailwind CSS</li>
+							<li>jQuery</li>
 						</ul>
-						<div class="exp-detail exp1 show">
-							<p>Software Engineer I</p>
-							<p class="timeline">
-								Jun 2023 - Present<br />
-							</p>
-							<p>Software Engineer Intern
-								<span class="purple">&#8674; Momentive.ai</span>
-							</p>
-							<p class="timeline">
-								Summer 2022<br />
-							</p>
-							<ul>
-								<li>
-									Managed company content with HTML, CSS, and React on the Content Engineering team.
-								</li>
-								<li>
-									Completed and pushed 7 projects to main branch in 9 weeks, changing >1300 lines of code.
-								</li>
-								<li>
-									Maintained brand consistency across languages and locales by coordinating efforts between 3 separate
-									teams to translate, localize, and upload content in &lt;24 hours.
-								</li>
-								<li>
-									Improved brand consistency/documentation by building 3 Storybook component controls.
-								</li>
-								<li>
-									Achieved 400% increase in SQLs via 2 A/B experiments on site content variations.
-								</li>
-							</ul>
-						</div>
-						<div class="exp-detail exp2">
-							<p>Freelance Web Developer</p>
-							<p class="timeline">
-								Aug 2022 - Present<br />
-							</p>
-							<ul>
-								<li>
-									Designed and developed websites for clients including Wellesley's CRED Lab, Wellesley's CS department,
-									professors, fellow students, community members, and local small businesses.
-								</li>
-							</ul>
-						</div>
-						<div class="exp-detail exp3">
-							<p>CS Department Teaching Assistant
-								<span class="purple">&#8674; Wellesley College</span>
-							</p>
-							<p class="timeline">
-								Sept 2021 - Present<br />
-							</p>
-							<ul>
-								<li>
-									Collaborated with Professor Scott Anderson to modernize CS304: Databases with Web Interfaces using the
-									MERN stack, then TA'ed for the revised course in spring semester 2023.
-								</li>
-								<li>
-									Instructed students in Python and problem-solving fundamentals (CS 111), front-end design/development
-									(CS 220), and full-stack development/database administration (CS304) through weekly lab sections,
-									lectures, and office hours for groups of up to 50 students.
-								</li>
-							</ul>
-						</div>
-						<div class="exp-detail exp4">
-							<p>Software Systems Developer Intern
-								<span class="purple">&#8674; Enercon Technologies</span>
-							</p>
-							<p class="timeline">
-								Dec 2020 - June 2022<br />
-							</p>
-							<ul>
-								<li>
-									Increased floor productivity by redesigning and redeveloping company intranet website using an MVC
-									framework (HTML, CSS, jQuery, C#, SQL) and integrated SDKs.
-								</li>
-								<li>
-									Automated manufacturing software validation, cutting labor from 5 weeks to &lt;23 minutes.
-								</li>
-								<li>
-									Translated functions from VB6 to Windows Forms (C#) to modernize 5 legacy apps.
-								</li>
-								<li>
-									Developed multiple Windows Forms (.NET, C#, SQL) to streamline employee data interaction.
-								</li>
-								<li>
-									Maintained source control by documenting system modifications with Github/BitBucket.
-								</li>
-							</ul>
-						</div>
 					</div>
-					<img src="assets/img/starbanner.svg" alt="Star Banner" class="star-banner" />
-					<div class="inv-wrap">
-						<h2>COMMUNITY/CAMPUS INVOLVEMENT</h2>
-						<div>
-							<p>Web Developer / Trips Leader
-								<span class="purple">&#8674; Dartmouth College Hackathon</span>
-							</p>
-							<p class="timeline">
-								Feb 2023 - June 2023<br />
-							</p>
-							<ul>
-								<li>
-									Worked in a small team to develop and maintain DartmouthHacks 2023's webpage.
-								</li>
-								<li>
-									Led day-of workshops and logistical operations for DartmouthHacks in April 2023.
-								</li>
-								<li>
-									Founded the HackathonTrips club, organizing a group excursion to MIT's Bitcoin hackathon.
-								</li>
-							</ul>
-						</div>
-						<div>
-							<p>Web Developer
-								<span class="purple">&#8674; Wellesley College Hackathon</span>
-							</p>
-							<p class="timeline">
-								May 2022 - Dec 2022<br />
-							</p>
-							<ul>
-								<li>
-									Independently developed and maintained WHACK 2022's webpage.
-								</li>
-								<li>
-									Coordinated day-of workshops and logistical operations for WHACK in October 2022.
-								</li>
-							</ul>
-						</div>
+					<div class="skills-group">
+						<h3>Platforms/ <br />Developer Tools</h3>
+						<ul>
+							<li>Git</li>
+							<li>Github Actions</li>
+							<li>Dependabot</li>
+							<li>Docker</li>
+							<li>Amazon Web Services (AWS)</li>
+							<li>Webpack</li>
+							<li>Jest</li>
+							<li>WebdriverIO</li>
+							<li>Figma</li>
+							<li>Storybook</li>
+							<li>Unix</li>
+						</ul>
 					</div>
-					<img src="assets/img/starbanner.svg" alt="Star Banner" class="star-banner" />
-					<h2 id="skillstitle">SKILLS</h1>
-					<div class="skills">
-						<div class="skills-group">
-							<h3>Scripts</h3>
-							<ul>
-								<li>HTML5/CSS3</li>
-								<li>JavaScript</li>
-								<li>Python</li>
-								<li>SQL/MySQL</li>
-								<li>MongoDB</li>
-								<li>Unix</li>
-							</ul>
-						</div>
-						<div class="skills-group">
-							<h3>Libraries / Frameworks</h3>
-							<ul>
-								<li>React.js</li>
-								<li>jQuery</li>
-								<li>Node.js</li>
-								<li>Express</li>
-								<li>Flask</li>
-							</ul>
-						</div>
-						<div class="skills-group">
-							<h3>Technologies</h3>
-							<ul>
-								<li>Git</li>
-								<li>Wordpress</li>
-								<li>Figma</li>
-								<li>Visual Studio Code</li>
-								<li>Jupyter Notebook</li>
-								<li>MS SQL Server</li>
-							</ul>
-						</div>
-						<div class="skills-group">
-							<h3>Languages</h3>
-							<ul>
-								<li>English</li>
-								<li>Japanese</li>
-								<li>French</li>
-							</ul>
-						</div>
-						<div class="skills-group">
-							<h3>Other</h3>
-							<ul>
-								<li>Agile Development</li>
-								<li>MVC Framework</li>
-								<li>Organization</li>
-								<li>Teamwork</li>
-								<li>Written Communication</li>
-							</ul>
-						</div>
+					<div class="skills-group">
+						<h3>Data/Web <br />Technologies</h3>
+						<ul>
+							<li>REST APIs</li>
+							<li>GraphQL</li>
+							<li>MySQL</li>
+							<li>MongoDB</li>
+							<li>Accessibility (WCAG)</li>
+							<li>Static Site Generation</li>
+						</ul>
+					</div>
+					<div class="skills-group">
+						<h3>Engineering Practices</h3>
+						<ul>
+							<li>Agile Development</li>
+							<li>Design Systems</li>
+							<li>Component Design</li>
+							<li>API Design</li>
+							<li>Data Modeling</li>
+							<li>Content Modeling</li>
+							<li>User Experience (UX)</li>
+							<li>Documentation</li>
+							<li>Leadership</li>
+							<li>Teamwork</li>
+							<li>Written Communication</li>
+						</ul>
 					</div>
 				</div>
+				<img src="assets/img/starbanner.svg" alt="Star Banner" class="star-banner" />
 			</div>
 		</section>
 
-		<!--Project Section-->
+		<!--Projects Section-->
 		<section id="projects">
-			<h1 class="subtitle" id="projects-title">03 . PROJECTS</h1>
-			<div class="row" id="button-section">
-				<button class="filter-button button active" onclick="filterSelection('all')">ALL</button>
-				<!-- <button class="filter-button button" onclick="filterSelection('python')">PYTHON</button> -->
-				<button class="filter-button button" onclick="filterSelection('data')">DATA</button>
-				<button class="filter-button button" onclick="filterSelection('web')">WEB DEV</button>
-			</div>
-			<div class="row" id="proj-cards">
-				<a class="proj-card web" href="https://github.com/oliviagiandrea/portfolioSite" target="_blank">
-					<img class="proj-img" alt="Portfolio Project Logo" src="assets/img/portfolio.png" />
-					<div class="proj-description container column">
-						<div class="img-description">
-							<h2>Portfolio Website Repo</h2>
-							<p>
-								Built entirely from scratch using <b>HTML, CSS,</b> and <b>JavaScript</b>. All icons drawn in
-								<b>Procreate</b>.
-							</p><br />
-							<i>HTML, CSS, JavaScript, Figma</i>
-						</div>
+			<h1 class="subtitle" id="projects-title">03 . Projects</h1>
+			<div class="projects-container">
+				<div class="row">
+					<div class="column-notes">
+						<h2>Wrench Design System</h2>
+						<p>
+							SurveyMonkey's design system used across multiple products to provide reusable UI
+							components,
+							shared styling infrastructure, and accessibility standards. Contributed component
+							architecture,
+							developer tooling, documentation, and a company-wide migration from JSS to CSS Modules.
+						</p>
+						<h3>Key Technologies</h3>
+						<p>
+							React, TypeScript, SASS/CSS Modules, Storybook, GitHub Actions
+						</p>
 					</div>
-				</a>
-				<a class="proj-card data" href="assets/edtwt.html" target="_blank">
-					<img class="proj-img" alt="Twitter API Project" src="assets/img/twitter.png" />
-					<div class="proj-description container column">
-						<div class="img-description">
-							<h2>#edtwt Sentiment Analysis</h2>
-							<p style="font-size: 0.9rem;">
-								Conducted <b>sentiment analysis</b> on tweets from Twitter's eating disorder communities using
-								<b>Twitter's API</b>.
-							</p><br />
-							<i>Python, sklearn, Pandas</i>
-						</div>
+					<div class="column-img">
+						<img src="assets/img/wrench.png" alt="Screenshot of SurveyMonkey's home page" />
 					</div>
-				</a>
+				</div>
+				<div class="row">
+					<div class="column-img">
+						<img src="assets/img/enercon.png" alt="Screenshot of Enercon Technologies' home page" />
+					</div>
+					<div class="column-notes">
+						<h2>Enercon Technologies Intranet Site</h2>
+						<p>
+							Internal company intranet supporting manufacturing operations, production workflows, and
+							employee tooling. Redesigned the frontend, modernized legacy applications, and automated
+							validation processes to improve efficiency across day-to-day operations.
+						</p>
+						<h3>Key Technologies</h3>
+						<p>
+							HTML, CSS, JavaScript (jQuery), C#, SQL
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<!--Contact Page-->
 		<section id="contact">
 			<div class="container column contact-wrap">
-				<h1 class="subtitle" id="contact-title">04 . CONTACT</h1>
+				<h1 class="subtitle" id="contact-title">04 . Contact</h1>
 				<p style="padding-bottom: 1rem; text-align: center;">
 					Let's connect!
 				</p>
 				<div class="container row">
-					<a href="mailto:olivia.giandrea@gmail.com" class="button">EMAIL</a>
-					<a href="https://www.linkedin.com/in/oliviagiandrea/" target="_blank" class="button">LINKEDIN</a>
-					<a href="https://github.com/oliviagiandrea/" target="_blank" class="button">GITHUB</a>
+					<a href="mailto:olivia.giandrea@gmail.com" class="button">Email</a>
+					<a href="https://www.linkedin.com/in/oliviagiandrea/" target="_blank" class="button">LinkedIn</a>
+					<a href="https://github.com/oliviagiandrea/" target="_blank" class="button">Github</a>
 				</div>
 			</div>
 		</section>
