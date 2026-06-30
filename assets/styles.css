@@ -53,7 +53,6 @@ a {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	align-content: center;
 }
 
 .row {
@@ -221,7 +220,8 @@ nav {
 
 @media (max-width: 35em) {
 	.primary-header {
-		background-color: var(--dark-blue);
+		background-color: var(--blue-dark);
+		height: 4rem;
 	}
 
 	.primary-navigation {
@@ -256,7 +256,6 @@ nav {
 	}
 
 	.logo {
-		margin-top: 1rem;
 		margin-left: 1.75rem;
 	}
 
@@ -270,8 +269,8 @@ nav {
 		border: 0;
 		width: 2rem;
 		height: 2rem;
-		top: 1.5rem;
-		right: 2.25rem;
+		top: 1rem;
+		right: 2rem;
 	}
 
 	.mobile-nav-toggle[aria-expanded="true"] {
@@ -391,6 +390,22 @@ nav {
 	height: auto;
 }
 
+@media (max-width: 35em) {
+	#home-wrap {
+		align-items: flex-start;
+
+		.title {
+			margin-top: 10vh;
+			margin-bottom: 5vh;
+		}
+
+		.description {
+			max-width: 50%;
+			line-height: 2em;
+		}
+	}
+}
+
 @media (min-width: 1600px) {
 	#portrait {
 		height: 75%;
@@ -482,7 +497,7 @@ nav {
 
 @media (max-width: 700px) {
 	.subtitle:after {
-		width: calc(90% - 110px);
+		width: calc(90% - 125px);
 	}
 
 	.about-container {
@@ -645,6 +660,33 @@ nav {
 		img {
 			max-width: 100%;
 		}
+	}
+}
+
+@media (max-width: 700px) {
+	.projects-container {
+		justify-content: center;
+		align-items: center;
+		max-width: 90%;
+		gap: 6rem;
+
+		.row {
+			flex-direction: column;
+			flex-wrap: nowrap;
+			gap: 2rem;
+			height: max-content;
+
+			.column-notes,
+			.column-img,
+			.column-notes:first-child {
+				max-width: 90%;
+				text-align: center;
+			}
+		}
+	}
+
+	.projects-container .row:first-child {
+		flex-flow: column-reverse;
 	}
 }
 
